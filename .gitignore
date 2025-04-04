@@ -1,0 +1,7 @@
+# 编译输出
+target/
+out/
+
+# IDE
+.idea/
+.vscode/
