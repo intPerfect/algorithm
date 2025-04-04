@@ -1,5 +1,10 @@
 import java.util.*;
 
+/**
+ * @LeetCodeId 49
+ * @LeetCodeLink <a href="https://leetcode-cn.com/problems/group-anagrams/">字母异位词分组</a>
+ * @Date 2025.4.4
+ */
 public class 字母异位词分组 {
     static class Solution {
         public List<List<String>> groupAnagrams(String[] strs) {
