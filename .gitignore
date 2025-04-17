@@ -5,3 +5,4 @@ out/
 # IDE
 .idea/
 .vscode/
+*.iml
