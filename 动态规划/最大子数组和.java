@@ -10,12 +10,22 @@ import java.util.*;
 public class 最大子数组和 {
     static class Solution {
         public int maxSubArray(int[] nums) {
-            int pre = 0, max = nums[0];
-            for (int x : nums) {
-                pre = Math.max(pre + x, x);
-                max = Math.max(pre, max);
+            int n = nums.length;
+            if (n == 0) return 0;
+
+            // dp[i]：以 nums[i] 结尾的最大子数组和
+            int[] dp = new int[n];
+            dp[0] = nums[0];
+            int result = dp[0];
+            for (int i = 1; i < n; i++) {
+                // 只有两种状态转移情况：
+                // ① 将 nums[i] 加入前面的子数组 ② 从 nums[i] 开始一个新的子数组
+                dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
+                if (dp[i] > result) {
+                    result = dp[i];
+                }
             }
-            return max;
+            return result;
         }
     }
 
