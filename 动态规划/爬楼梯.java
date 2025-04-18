@@ -12,11 +12,13 @@ public class 爬楼梯 {
         public int climbStairs(int n) {
             if (n <= 2) return n;
 
-            // dp[i]：爬到第 i 阶有 dp[i] 种方法
+            // 1. dp[i]：爬到第 i 阶有 dp[i] 种方法
             int[] dp = new int[n + 1];
-            dp[1] = 1;
-            dp[2] = 2;
+            // 2. 初始化
+            dp[1] = 1; // 爬到第 1 阶有 1 种方法（+1）
+            dp[2] = 2; // 爬到第 2 阶有 2 种方法（+1 +1, +2）
             for (int i = 3; i <= n; i++) {
+                // 3. 状态转移方程：爬到第 i 阶有 dp[i] = dp[i-1] + dp[i-2] 种方法
                 dp[i] = dp[i - 1] + dp[i - 2];
             }
             return dp[n];
