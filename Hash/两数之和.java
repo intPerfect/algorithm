@@ -1,4 +1,4 @@
-package 哈希;
+package Hash;
 
 import java.util.*;
 

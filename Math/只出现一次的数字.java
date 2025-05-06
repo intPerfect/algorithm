@@ -1,6 +1,4 @@
-package 数学技巧;
-
-import java.util.*;
+package Math;
 
 /**
  * @LeetCodeId 136

@@ -1,6 +1,4 @@
-package 动态规划;
-
-import java.util.*;
+package dp;
 
 /**
  * @LeetCodeId 53
