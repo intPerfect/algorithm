@@ -1,7 +1,5 @@
 package LinkedList;
 
-import java.util.*;
-
 /**
  * @LeetCodeId 2
  * @LeetCodeLink <a href="https://leetcode.cn/problems/add-two-numbers/">两数相加</a>
@@ -12,9 +10,6 @@ public class 两数相加 {
     static class ListNode {
         int val;
         ListNode next;
-
-        ListNode() {
-        }
 
         ListNode(int val) {
             this.val = val;
