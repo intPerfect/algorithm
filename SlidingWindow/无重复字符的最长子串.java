@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 3
  * @LeetCodeLink <a href="https://leetcode.cn/problems/longest-substring-without-repeating-characters">无重复字符的最长子串</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025-05-09
  */
 public class 无重复字符的最长子串 {
@@ -20,7 +21,7 @@ public class 无重复字符的最长子串 {
             Set<Character> window = new HashSet<>();
             int res = 0;
 
-            for (int left = 0,right = 0; right < s.length(); right++) {
+            for (int left = 0, right = 0; right < s.length(); right++) {
                 char c = s.charAt(right);
                 // 如果当前字符已在窗口中，移动左边界直到移除重复字符
                 while (window.contains(c)) {
