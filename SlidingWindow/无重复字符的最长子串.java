@@ -23,8 +23,9 @@ public class 无重复字符的最长子串 {
 
             for (int left = 0, right = 0; right < s.length(); right++) {
                 char c = s.charAt(right);
-                // 如果当前字符已在窗口中，移动左边界直到移除重复字符
+                // 如果当前字符已在窗口中，
                 while (window.contains(c)) {
+                    // 移动左边界直到满足窗口条件
                     window.remove(s.charAt(left));
                     left++;
                 }
