@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 20
  * @LeetCodeLink <a href="https://leetcode.cn/problems/valid-parentheses/">有效的括号</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025-04-18
  */
 public class 有效的括号 {

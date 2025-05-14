@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @LeetCodeId 206
  * @LeetCodeLink <a href="https://leetcode.cn/problems/reverse-linked-list/">反转链表</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025/05/06
  */
-public class 反转链表 {
+public class ReverseLinkedList {
     // 链表节点定义
     static class ListNode {
         int val;

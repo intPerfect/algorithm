@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @LeetCodeId 215
  * @LeetCodeLink <a href="https://leetcode.cn/problems/kth-largest-element-in-an-array">数组中的第K个最大元素</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025-05-06
  */
-public class 数组中的第K个最大元素 {
+public class KthLargest {
     static class Solution {
         public int findKthLargest(int[] nums, int k) {
             // 创建一个小顶堆，用于维护当前最大的k个元素

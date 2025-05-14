@@ -39,7 +39,7 @@ public class 前K个高频元素 {
                 freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
             }
 
-            // 2. 使用小根堆（优先队列）保存频率最高的 k 个元素
+            // 2. 使用小根堆保存频率最高的 k 个元素
             PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(
                     (a, b) -> a.getValue() - b.getValue() // 按频率升序排列
             );

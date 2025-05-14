@@ -1,4 +1,4 @@
-package SlidingWindow;
+package Hash;
 
 import java.util.*;
 

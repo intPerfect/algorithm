@@ -40,13 +40,10 @@ public class 回文链表 {
             }
 
             // 使用双指针从两端向中间比较
-            int i = 0, j = vals.size() - 1;
-            while (i < j) {
-                if (!vals.get(i).equals(vals.get(j))) {
+            for (int front = 0, back = vals.size() - 1; front < back; front++, back--) {
+                if (!vals.get(front).equals(vals.get(back))) {
                     return false;
                 }
-                i++;
-                j--;
             }
             return true;
         }

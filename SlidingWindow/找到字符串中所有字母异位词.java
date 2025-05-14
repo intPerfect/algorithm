@@ -26,7 +26,7 @@ public class 找到字符串中所有字母异位词 {
                 if (left < 0) { // 窗口长度不足 p.length()
                     continue;
                 }
-                // 如果 s 窗口内的字母频率与 p 相等，则记录此起始索引
+                // 如果 s 窗口内的字母频率与 p 相等，则记录此起始索引作为答案
                 if (Arrays.equals(cntS, cntP)) {
                     ans.add(left);
                 }
