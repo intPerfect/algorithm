@@ -11,28 +11,37 @@ public class 找到字符串中所有字母异位词 {
     static class Solution {
         public List<Integer> findAnagrams(String s, String p) {
             List<Integer> ans = new ArrayList<>();
-            int[] cntP = new int[26]; // 统计 p 的字母频率
-            int[] cntS = new int[26]; // 统计 s 的字母频率
-            // 记录 p 中每个字母出现的次数
+            if (s.length() < p.length()) return ans;
+
+            int[] pCount = new int[26];
+            int[] sCount = new int[26];
+
+            // 先统计模式串 p 的字符频率
             for (char c : p.toCharArray()) {
-                cntP[c - 'a']++;
+                pCount[c - 'a']++;
             }
-            // 使用滑动窗口遍历 s
-            for (int right = 0; right < s.length(); right++) {
-                // 右指针进入窗口，更新 s 中当前字母频率
-                cntS[s.charAt(right) - 'a']++;
-                // 当窗口大小达到 p 的长度时，开始比较窗口内字母频率
-                int left = right - p.length() + 1;
-                if (left < 0) { // 窗口长度不足 p.length()
-                    continue;
+
+            int left = 0, right = 0;
+            while (right < s.length()) {
+                // 右指针字符进入窗口
+                sCount[s.charAt(right) - 'a']++;
+
+                // 如果窗口大小等于 p.length()，就可以检查是否是异位词
+                if (right - left + 1 == p.length()) {
+                    // 窗口串 s 的字符频率和模式串 p 相同
+                    if (Arrays.equals(sCount, pCount)) {
+                        // 将左指针加入结果集
+                        ans.add(left);
+                    }
+                    // 左指针字符移出窗口
+                    sCount[s.charAt(left) - 'a']--;
+                    left++;
                 }
-                // 如果 s 窗口内的字母频率与 p 相等，则记录此起始索引作为答案
-                if (Arrays.equals(cntS, cntP)) {
-                    ans.add(left);
-                }
-                // 左指针离开窗口，更新窗口内字母频率
-                cntS[s.charAt(left) - 'a']--;
+
+                // 右指针继续扩张窗口
+                right++;
             }
+
             return ans;
         }
     }
