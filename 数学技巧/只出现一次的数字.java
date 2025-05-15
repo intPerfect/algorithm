@@ -1,4 +1,4 @@
-package Math;
+package 数学技巧;
 
 /**
  * @LeetCodeId 136

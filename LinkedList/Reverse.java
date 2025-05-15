@@ -8,7 +8,7 @@ import java.util.*;
  * @Frequency 🔥🔥🔥
  * @Date 2025/05/06
  */
-public class ReverseLinkedList {
+public class Reverse {
     // 链表节点定义
     static class ListNode {
         int val;

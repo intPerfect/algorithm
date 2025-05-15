@@ -5,9 +5,10 @@ import java.util.*;
 /**
  * @LeetCodeId 1
  * @LeetCodeLink <a href="https://leetcode.cn/problems/two-sum/">两数之和</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025-04-09
  */
-public class 两数之和 {
+public class TwoSum {
     static class Solution {
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> hash = new HashMap<>();
