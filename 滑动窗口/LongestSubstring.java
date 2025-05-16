@@ -23,9 +23,9 @@ public class LongestSubstring {
 
             for (int left = 0, right = 0; right < s.length(); right++) {
                 char c = s.charAt(right);
-                // 如果当前字符已在窗口中，
+                // 如果右指针字符已在窗口中，
                 while (window.contains(c)) {
-                    // 移动左边界直到满足窗口条件
+                    // 移动左指针直到满足窗口条件
                     window.remove(s.charAt(left));
                     left++;
                 }

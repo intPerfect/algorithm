@@ -40,7 +40,7 @@ public class 电话号码的字母组合 {
          * 回溯函数
          *
          * @param result 保存所有可能组合的结果集
-         * @param digits 原始输入数字字符串
+         * @param digits 原始输入数字字符串 ("256")
          * @param index  当前处理到的字符位置
          * @param path   当前已构建的组合路径
          */
