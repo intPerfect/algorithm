@@ -5,8 +5,8 @@ import java.util.*;
 /**
  * @LeetCodeId 234
  * @LeetCodeLink <a href="https://leetcode.cn/problems/palindrome-linked-list/">回文链表</a>
- * @Date 2025-05-06
  * @Frequency 🔥
+ * @Date 2025-05-06
  */
 public class 回文链表 {
     // 单链表节点定义

@@ -8,7 +8,7 @@ import java.util.*;
  * @Frequency 🔥🔥🔥
  * @Date 2025-05-09
  */
-public class LongestSubstring {
+public class LongestUniqueSubstring {
     static class Solution {
         /**
          * 使用滑动窗口算法，找出字符串中不含重复字符的最长子串的长度。

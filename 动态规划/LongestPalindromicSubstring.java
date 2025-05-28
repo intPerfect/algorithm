@@ -3,9 +3,10 @@ package 动态规划;
 /**
  * @LeetCodeId 5
  * @LeetCodeLink <a href="https://leetcode.cn/problems/longest-palindromic-substring">最长回文子串</a>
+ * @Frequency 🔥🔥🔥
  * @Date 2025-05-28
  */
-public class 最长回文子串 {
+public class LongestPalindromicSubstring {
     static class Solution {
         /**
          * 动态规划解法，寻找字符串中最长的回文子串
