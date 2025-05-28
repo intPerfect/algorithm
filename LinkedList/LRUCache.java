@@ -11,7 +11,7 @@ import java.util.*;
 public class LRUCache {
     static class Solution {
         // 双向链表用于 O(1) 插入或更新节点
-        class DLinkedNode {
+        static class DLinkedNode {
             int key, value;
             DLinkedNode prev, next;
 
@@ -27,7 +27,7 @@ public class LRUCache {
         // 头尾虚拟节点
         private final DLinkedNode head, tail;
 
-        // 哈希表用于 O(1) 定位缓存节点
+        // 哈希表用于 O(1) 查询缓存节点
         private final Map<Integer, DLinkedNode> cache = new HashMap<>();
         private int size; // 当前元素数量
         private final int capacity; // 最大容量
