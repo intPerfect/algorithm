@@ -1,4 +1,4 @@
-package Tree;
+package BinaryTree;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ import java.util.*;
  * @LeetCodeLink <a href="https://leetcode.cn/problems/binary-tree-inorder-traversal">二叉树的中序遍历</a>
  * @Date 2025-05-06
  */
-public class 二叉树的中序遍历 {
+public class 中序遍历 {
     // 定义二叉树节点结构
     static class TreeNode {
         int val;

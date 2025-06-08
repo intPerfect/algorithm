@@ -15,17 +15,20 @@ public class 最大子数组和 {
             // dp[i]：以 nums[i] 结尾的最大子数组和
             int[] dp = new int[n];
             dp[0] = nums[0];
-            int max = dp[0];
+            int res = dp[0];
 
             for (int i = 1; i < n; i++) {
                 // 只有两种状态转移情况：
-                // ① 将 nums[i] 加入前面的子数组 ② 从 nums[i] 开始一个新的子数组
-                dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
-                if (dp[i] > max) {
-                    max = dp[i];
+                // ① 将 nums[i] 加入前面的子数组
+                if (dp[i - 1] > 0) {
+                    dp[i] = dp[i - 1] + nums[i];
+                } else {
+                    // ② 从 nums[i] 开始一个新的子数组
+                    dp[i] = nums[i];
                 }
+                res = Math.max(res, dp[i]);
             }
-            return max;
+            return res;
         }
     }
 

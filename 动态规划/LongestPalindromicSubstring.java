@@ -29,7 +29,7 @@ public class LongestPalindromicSubstring {
 
             for (int r = 1; r < len; r++) {
                 for (int l = 0; l < r; l++) {
-                    // dp[l][r] = dp[l + 1,r - 1] && (s[l] == s[r])
+                    // dp[l][r] = (s[l] == s[r]) && dp[l + 1,r - 1]
                     if (s.charAt(l) == s.charAt(r)) {
                         if (r - l <= 2 || dp[l + 1][r - 1]) {
                             dp[l][r] = true;
