@@ -23,6 +23,7 @@ public class 最大子数组和 {
                 if (dp[i - 1] > 0) {
                     dp[i] = dp[i - 1] + nums[i];
                 } else {
+                    // 前面的子数组和为负数，已经没有意义了，因此：
                     // ② 从 nums[i] 开始一个新的子数组
                     dp[i] = nums[i];
                 }

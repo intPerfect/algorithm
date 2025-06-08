@@ -13,13 +13,14 @@ public class ThreeSum {
 
         /**
          * 查找所有和为 0 的三元组，结果不重复
+         *
          * @param nums 输入整数数组
          * @return 所有满足条件的三元组列表
          */
         public List<List<Integer>> threeSum(int[] nums) {
-            List<List<Integer>> ans = new ArrayList<>();
+            List<List<Integer>> res = new ArrayList<>();
             int len = nums.length;
-            if (nums == null || len < 3) return ans;
+            if (len < 3) return res;
 
             Arrays.sort(nums); // 排序数组
 
@@ -34,22 +35,17 @@ public class ThreeSum {
                 while (L < R) {
                     int sum = nums[i] + nums[L] + nums[R];
                     if (sum == 0) {
-                        ans.add(Arrays.asList(nums[i], nums[L], nums[R]));
-
+                        res.add(Arrays.asList(nums[i], nums[L], nums[R]));
                         while (L < R && nums[L] == nums[L + 1]) L++; // 左指针去重
                         while (L < R && nums[R] == nums[R - 1]) R--; // 右指针去重
-
-                        L++;
-                        R--;
-                    } else if (sum < 0) {
-                        L++;
-                    } else {
-                        R--;
+                        L++; R--;
                     }
+                    else if (sum < 0) L++;
+                    else if (sum > 0) R--;
                 }
             }
 
-            return ans;
+            return res;
         }
     }
 
