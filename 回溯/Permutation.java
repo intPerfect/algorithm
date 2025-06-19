@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 46
  * @LeetCodeLink <a href="https://leetcode.cn/problems/permutations">全排列</a>
- * @Frequency 🔥🔥🔥
+ * @Frequency 257
  * @Date 2025-06-07
  */
 public class Permutation {

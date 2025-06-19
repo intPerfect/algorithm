@@ -3,7 +3,7 @@ package 动态规划;
 /**
  * @LeetCodeId 5
  * @LeetCodeLink <a href="https://leetcode.cn/problems/longest-palindromic-substring">最长回文子串</a>
- * @Frequency 🔥🔥🔥
+ * @Frequency 288
  * @Date 2025-05-28
  */
 public class LongestPalindromicSubstring {

@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 15
  * @LeetCodeLink <a href="https://leetcode.cn/problems/3sum">三数之和</a>
- * @Frequency 🔥🔥🔥
+ * @Frequency 411
  * @Date 2025-05-14
  */
 public class ThreeSum {

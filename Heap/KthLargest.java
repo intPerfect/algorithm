@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 215
  * @LeetCodeLink <a href="https://leetcode.cn/problems/kth-largest-element-in-an-array">数组中的第K个最大元素</a>
- * @Frequency 🔥🔥🔥
+ * @Frequency 525
  * @Date 2025-05-06
  */
 public class KthLargest {

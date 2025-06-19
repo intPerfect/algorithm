@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @LeetCodeId 206
  * @LeetCodeLink <a href="https://leetcode.cn/problems/reverse-linked-list/">反转链表</a>
- * @Frequency 🔥🔥🔥
+ * @Frequency 678 ⭐⭐⭐⭐⭐
  * @Date 2025/05/06
  */
 public class Reverse {
