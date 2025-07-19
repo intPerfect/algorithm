@@ -28,20 +28,20 @@ public class 层序遍历 {
 
     static class Solution {
         public List<List<Integer>> levelOrder(TreeNode root) {
-            Queue<TreeNode> queue = new LinkedList<>(); // 节点队列
-            List<List<Integer>> res = new ArrayList<>(); // 结果集
+            Queue<TreeNode> queue = new LinkedList<>(); // 第 i 层的节点队列
+            List<List<Integer>> res = new ArrayList<>(); // 总结果集
 
             // 根节点入队
             if (root != null) queue.add(root);
             while (!queue.isEmpty()) {
-                List<Integer> tmp = new ArrayList<>(); // 当前层遍历结果暂存集
-                // 遍历当前层的所有节点
+                List<Integer> tmp = new ArrayList<>(); // 当前层结果集
+                // 遍历当前层的所有节点：
                 int currentLevelSize = queue.size();
                 for (int i = 0; i < currentLevelSize; i++) {
-                    // 取出队头节点
+                    // 依次取出队头节点，①将其值添加到结果集，
                     TreeNode node = queue.poll();
                     tmp.add(node.val);
-                    // 分别遍历左右子树
+                    // ②并将其左右子树入队，以便下一层遍历
                     if (node.left != null) queue.add(node.left);
                     if (node.right != null) queue.add(node.right);
                 }

@@ -28,14 +28,14 @@ public class 最大深度 {
 
     static class Solution {
         public int maxDepth(TreeNode root) {
-            // 如果根节点为空，深度为0
+            // 如果根节点为空，深度为 0 (递归基)
             if (root == null) {
                 return 0;
             } else {
                 // 递归计算左右子树的最大深度
                 int left = maxDepth(root.left);
                 int right = maxDepth(root.right);
-                // 树高 = 根节点深度 = 左右子树最大深度 + 1
+                // 树高 = 根节点深度 = 左右子树最大深度 + 1 (root 节点也算一个)
                 return Math.max(left, right) + 1;
             }
         }
