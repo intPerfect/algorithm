@@ -6,6 +6,7 @@ import java.util.*;
  * @LeetCodeId 347
  * @LeetCodeLink <a href="https://leetcode.cn/problems/top-k-frequent-elements">前 K 个高频元素</a>
  * @Date 2025-05-13
+ * @Frequency 33
  */
 public class 前K个高频元素 {
     static class Solution {

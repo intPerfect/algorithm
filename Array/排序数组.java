@@ -6,6 +6,7 @@ import java.util.*;
  * @LeetCodeId 912
  * @LeetCodeLink <a href="https://leetcode.cn/problems/sort-an-array/">排序数组</a>
  * @Date 2025/07/19
+ * @Frequency 306
  */
 public class 排序数组 {
     static class Solution {
